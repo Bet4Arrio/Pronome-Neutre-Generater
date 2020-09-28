@@ -5,13 +5,11 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 import "./Assets/Styles/Styles";
 
-var stateJwt = null;
-
 ReactDOM.render(
   <BrowserRouter>
     <Routes />
   </BrowserRouter>,
-  document.getElementById("mainContent")
+  document.getElementById("root")
 );
 
 serviceWorker.unregister();
