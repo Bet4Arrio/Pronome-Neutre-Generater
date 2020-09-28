@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Indie Flower", cursive;
-  background: #232323;
+  background: #0f0d16;
 }
 .titulo {
   text-align: center;
@@ -22,14 +22,60 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.busca {
-  width: 40%;
-  margin-left: 20%;
+input {
+  outline: none;
+}
+.bordaCampoBusca {
+  position: absolute;
+  width: calc(34% + 8px);
+  margin-left: calc(30% - 2px);
+  margin-top: -1px;
   border-radius: 50px;
-
+  border: none;
+  height: 54px;
+  text-align: center;
+  background: #fb3f96;
+  background: linear-gradient(25deg, #fb3f96 24%, #3f5efb 71%);
+}
+.campoBusca {
+  position: absolute;
+  width: 34%;
+  margin-left: 30%;
+  border-radius: 50px;
+  border: none;
   height: 50px;
   text-align: center;
-  background: #fff;
+  background: #010017;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+.botaoBusca {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  right: 0;
+  margin-right: calc(30% - 2px);
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../Images/searchIcon.svg);
+  background-image: url(/static/media/searchIcon.dd4338de.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.botaoBuscaBG {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  right: 0;
+  margin-right: calc(30% - 2px);
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  background: #010017;
+  background: #fb3f96;
+  background: linear-gradient(25deg, #fb3f96 24%, #3f5efb 71%);
 }
 /* references */
 /* https://css-tricks.com/gradient-borders-in-css/ */

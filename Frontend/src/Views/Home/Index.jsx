@@ -5,7 +5,11 @@ export default class Index extends Component {
     return (
       <>
         <h1 className="titulo">Pronome Neutre Generater</h1>
-        <input type="text" className="busca" />
+        <div className="bordaCampoBusca"></div>
+
+        <input type="text" className="campoBusca" />
+        <input type="button" className="botaoBuscaBG" />
+        <input type="button" className="botaoBusca" />
       </>
     );
   }
